@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GroupExecution">
+
+	<groups>
+		<run>
+			<!-- <include name="odd"></include> -->
+			<exclude name="even"></exclude>  <!-- another way -->
+		</run>
+
+	</groups>
+	<test name="SampleProject">
+		<classes>
+			<class name="com.abc.demo.GroupApp" />
+		</classes>
+	</test> <!-- SampleProject -->
+</suite> <!-- GroupExecution -->

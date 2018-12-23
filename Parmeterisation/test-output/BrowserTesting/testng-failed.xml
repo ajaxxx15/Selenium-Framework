@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BrowserTesting]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="Welcome123"/>
+  <parameter name="username" value="nitinmanjunath1991@gmail.com"/>
+  <test thread-count="5" name="chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.abc.magento.Test1">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="credentials"/>
+        </methods>
+      </class> <!-- com.abc.magento.Test1 -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [BrowserTesting] -->

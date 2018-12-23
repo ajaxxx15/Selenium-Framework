@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [CrossBrowserTesting]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="Welcome123"/>
+  <parameter name="username" value="nitinmanjunath1991@gmail.com"/>
+  <test thread-count="5" parallel="tests" name="chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.abc.magento.CrossBrowserTesting">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="credentials"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.abc.magento.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [CrossBrowserTesting] -->
